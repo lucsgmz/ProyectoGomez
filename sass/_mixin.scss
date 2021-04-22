@@ -1,0 +1,29 @@
+@mixin button($condicion) {
+    background-color: $fondo-button;
+    padding: 5px 10px;
+    color: $texto-titulos;
+    font-family: $font-button;
+    text-transform: uppercase;
+    border: 2px solid $border-button;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    @if $condicion {
+        border-radius: 5px;
+        color: #000;
+    }
+} 
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media all and (max-width: 600px) {@content};
+    }
+    @if $breakpoint == tablet {
+        @media all and (max-width: 900px) {@content};
+    }
+    @if $breakpoint == pc {
+        @media all and (max-width: 1400px) {@content};
+    }
+    @if $breakpoint == tv {
+        @media all and (max-width: 1800px) {@content};
+    }
+}

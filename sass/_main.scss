@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  @include responsive(phone){
+    font-size: 0.65em;
+  }
+}
+
+#header {
+  background-color: $fondoNav;
+  min-height: 10px;
+  border-bottom: 1px solid #000;
+  position: relative;
+  width: $ancho-navegacion;
+  img a {
+    margin-top: -20px;
+    padding-top: 30px;
+  }
+  .navegacion {
+    padding-left: 270px;
+  }
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      font-family: $font-barradenavegacion;
+      cursor: pointer;
+    }
+  }
+  .logo:hover {
+    background: transparent;
+  }
+  a {
+    display: inline-block;
+    color: $texto-barranavegacion;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-left: 10px;
+    &:hover {
+      color: #fff;
+      background: grey;
+    }
+  }
+  .redes {
+    margin-left: 250px;
+  }
+  .navbar-brand {
+    height: 75px;
+  }
+}
+
+.fondo_p {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seccion {
+  background-image: url(../imagenes/bem.jpg);
+  width: 100%;
+  height: 120vh;
+  background-position: center;
+  position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    padding: 25%;
+    text-align: center;
+    font-family: $font-secundario;
+    .button{
+    @include button($condicion);  
+    }
+  }
+}
+.seccion_1 {
+  background-image: url(../imagenes/catalogo.jpg);
+  width: 100%;
+  height: 120vh;
+  background-position: center;
+  position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .info {
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    padding: 20px 0px;
+    text-align: center;
+    h2 {
+      font-size: 4rem;
+      padding-top: 10px;
+      font-family: $font-principal;
+    }
+    h3 {
+      font-size: 2.5rem;
+      padding: 10px 0px;
+      font-family: $font-principal;
+      .button{
+        @include button($condicion);
+        color: black;  
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      font-family: $font-parrafo;
+    }
+  }
+}
+
+.fondoImagenLugares {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/fondoLugares3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#contenido {
+  padding-top: 1px;
+  max-width: 1280px;
+  margin: auto;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1em;
+    font-family: $font-secundario;
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 300;
+    font-family: $font-secundario;
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.viajes {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 1em;
+  .destinos {
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  img {
+    display: block;
+    border: 1px solid #000;
+  }
+  h4 {
+    font-family: $font-secundario;
+  }
+}
+
+.fondo {
+  background: rgb(124, 169, 202);
+  background: linear-gradient(
+    0deg,
+    rgba(124, 169, 202, 1) 11%,
+    rgba(162, 156, 144, 1) 70%,
+    rgba(206, 205, 205, 1) 100%
+  );
+}
+
+.principalDestinos {
+  font-family: $font-secundario;
+  padding-top: 25px;
+  padding-left: 15px;
+  .rojo {
+    color: #ff5d5d;
+  }
+}
+
+.modificador {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 80%;
+  padding-top: 25px;
+  .destinos1 {
+    padding-top: 55px;
+  }
+}
+
+.acerca {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 4em;
+  .bossAcerca {
+    text-align: start;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    h2 {
+      font-family: $font-secundario;
+      font-size: 3rem;
+    }
+    h3 {
+      font-family: $font-principal;
+      padding-top: 15px;
+    }
+    p {
+      font-family: $font-parrafo;
+    }
+  }
+  .bossContact {
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    padding-top: 150px;
+    h2 {
+      font-family: $font-parrafo;
+      font-size: 2rem;
+    }
+    p {
+      font-family: $font-parrafo;
+      font-size: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+.fondoContacto {
+  background-image: url(../imagenes/fondoContacto2.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formEstilo {
+  width: 50%;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  textarea {
+    resize: none;
+  }
+}
+
+.formInfo {
+  text-align: center;
+  margin-top: 0;
+  color: #000;
+  font-family: $font-secundario;
+}
+
+.formula,
+.enviar {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  margin: 30px 0px;
+  font-size: 20px;
+  border: none;
+}
+.enviar {
+  background-color: #000;
+  border: 0;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: 0;
+  opacity: 0.7;
+  transition: 0.8s ease-out;
+  color: #fff;
+}
+.enviar:hover {
+  opacity: 1;
+  border-radius: 0;
+}
+
+.whatsapp {
+  display: block;
+  position: fixed;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: right;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
