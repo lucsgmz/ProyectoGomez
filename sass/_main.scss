@@ -6,18 +6,15 @@
 
 html {
   @include responsive(phone) {
-    font-size: 0.65em;
+    font-size: 0.8em;
   }
   @include responsive(phone) {
     #header {
       position: relative;
-    }
-  }
-  @include responsive(phone) {
-    .navegacion {
-      display: flex;
-      text-align: start;
-      margin: auto;
+      .navegacion {
+        padding: 0px;
+        font-size: 2em;
+      }
     }
   }
   @include responsive(phone) {
@@ -26,9 +23,40 @@ html {
     }
   }
 }
+
+.modificador {
+  @include responsive(phone) {
+    .destinos1 {
+      padding-top: 55px;
+      padding-bottom: 55px;
+    }
+    .destinos {
+      padding-bottom: 55px;
+    }
+  }
+}
 main {
   @include responsive(phone) {
     margin-top: 0px;
+  }
+}
+
+.fondoImagenLugares {
+  @include responsive(phone) {
+    .viajes {
+      display: flex;
+      flex-direction: column;
+      .destinos {
+        width: 100%;
+      }
+    }
+  }
+}
+.fondoContacto {
+  @include responsive(phone) {
+    .formEstilo {
+      width: 80%;
+    }
   }
 }
 #header {
@@ -114,7 +142,7 @@ main {
 .seccion_1 {
   background-image: url(../imagenes/catalogo.jpg);
   width: 100%;
-  height: 120vh;
+  height: 125vh;
   background-position: center;
   position: center;
   background-size: cover;
@@ -152,15 +180,15 @@ main {
 
 .fondoImagenLugares {
   width: 100%;
-  height: 160vh;
+  height: 200vh;
   background-image: url(../imagenes/fondolugares3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#contenido {
-  padding-top: 100px;
+.TextoContenido {
+  padding-top: 150px;
   max-width: 1280px;
   margin: auto;
   h1 {
@@ -178,9 +206,23 @@ main {
     padding: 15px;
     font-size: 1.5rem;
   }
+}
+.contenido {
+  h3 {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 300;
+    font-family: $font-secundario;
+    padding: 15px;
+    font-size: 1.5rem;
+  }
   a {
     text-decoration: none;
     color: #000;
+    &:hover {
+      color: #3a3a3a;
+      text-decoration: inherit;
+    }
   }
 }
 
