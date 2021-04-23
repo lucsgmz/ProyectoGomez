@@ -4,12 +4,33 @@
   box-sizing: border-box;
 }
 
-html{
-  @include responsive(phone){
+html {
+  @include responsive(phone) {
     font-size: 0.65em;
   }
+  @include responsive(phone) {
+    #header {
+      position: relative;
+    }
+  }
+  @include responsive(phone) {
+    .navegacion {
+      display: flex;
+      text-align: start;
+      margin: auto;
+    }
+  }
+  @include responsive(phone) {
+    .principalDestinos {
+      margin: auto;
+    }
+  }
 }
-
+main {
+  @include responsive(phone) {
+    margin-top: 0px;
+  }
+}
 #header {
   background-color: $fondoNav;
   min-height: 10px;
@@ -85,8 +106,8 @@ html{
     padding: 25%;
     text-align: center;
     font-family: $font-secundario;
-    .button{
-    @include button($condicion);  
+    .button {
+      @include button($condicion);
     }
   }
 }
@@ -117,9 +138,9 @@ html{
       font-size: 2.5rem;
       padding: 10px 0px;
       font-family: $font-principal;
-      .button{
+      .button {
         @include button($condicion);
-        color: black;  
+        color: black;
       }
     }
     p {
