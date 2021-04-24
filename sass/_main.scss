@@ -3,62 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  @include responsive(phone) {
-    font-size: 0.8em;
-  }
-  @include responsive(phone) {
-    #header {
-      position: relative;
-      .navegacion {
-        padding: 0px;
-        font-size: 2em;
-      }
-    }
-  }
-  @include responsive(phone) {
-    .principalDestinos {
-      margin: auto;
-    }
-  }
-}
-
-.modificador {
-  @include responsive(phone) {
-    .destinos1 {
-      padding-top: 55px;
-      padding-bottom: 55px;
-    }
-    .destinos {
-      padding-bottom: 55px;
-    }
-  }
-}
-main {
-  @include responsive(phone) {
-    margin-top: 0px;
-  }
-}
-
-.fondoImagenLugares {
-  @include responsive(phone) {
-    .viajes {
-      display: flex;
-      flex-direction: column;
-      .destinos {
-        width: 100%;
-      }
-    }
-  }
-}
-.fondoContacto {
-  @include responsive(phone) {
-    .formEstilo {
-      width: 80%;
-    }
-  }
-}
 #header {
   background-color: $fondoNav;
   min-height: 10px;
@@ -142,7 +86,7 @@ main {
 .seccion_1 {
   background-image: url(../imagenes/catalogo.jpg);
   width: 100%;
-  height: 125vh;
+  height: 135vh;
   background-position: center;
   position: center;
   background-size: cover;
@@ -180,7 +124,7 @@ main {
 
 .fondoImagenLugares {
   width: 100%;
-  height: 200vh;
+  height: 220vh;
   background-image: url(../imagenes/fondolugares3.jpg);
   background-repeat: no-repeat;
   background-size: cover;

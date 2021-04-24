@@ -1,0 +1,58 @@
+html {
+    @include responsive(phone) {
+      font-size: 0.8em;
+    }
+    @include responsive(phone) {
+      #header {
+        position: relative;
+        .navegacion {
+          padding: 0px;
+          font-size: 2em;
+        }
+      }
+    }
+    @include responsive(phone) {
+      .principalDestinos {
+        margin: auto;
+      }
+    }
+  }
+  
+  .modificador {
+    @include responsive(phone) {
+      .destinos1 {
+        padding-top: 55px;
+        padding-bottom: 55px;
+      }
+      .destinos {
+        padding-bottom: 55px;
+      }
+    }
+  }
+  main {
+    @include responsive(phone) {
+      margin-top: 0px;
+    }
+  }
+  
+  .fondoImagenLugares {
+    @include responsive(phone) {
+        .TextoContenido{
+            padding-top: 70px;
+        }
+        .viajes {
+        display: flex;
+        flex-direction: column;
+        .destinos {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .fondoContacto {
+    @include responsive(phone) {
+      .formEstilo {
+        width: 80%;
+      }
+    }
+  }
