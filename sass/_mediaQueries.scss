@@ -34,7 +34,7 @@ html {
 }
 .seccion_1{
   @include responsive(phone) {
-    height: 140vh;
+    height: 160vh;
   }
 }
 .modificador {
