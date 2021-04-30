@@ -8,9 +8,6 @@ html {
       .navegacion {
         padding: 0px;
         font-size: 2em;
-        .redes {
-          padding-left: 0px;
-        }
       }
     }
   }
@@ -20,14 +17,13 @@ html {
     }
   }
 }
-
 .seccion {
   @include responsive(phone) {
     h1 {
       padding: 0px;
       padding-top: 255px;
-      color: #ff5d5d;
-      font-size: 3rem;
+      color: #000;
+      font-size: 3em;
       text-align: center;
     }
   }
@@ -42,9 +38,17 @@ html {
     .destinos1 {
       padding-top: 55px;
       padding-bottom: 55px;
+      padding-left: 0px;
     }
     .destinos {
       padding-bottom: 55px;
+    }
+  }
+}
+.acerca {
+  @include responsive(phone) {
+    .bossAcerca {
+      padding-left: 5px;
     }
   }
 }
