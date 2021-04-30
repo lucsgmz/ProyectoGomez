@@ -10,6 +10,9 @@ html {
         font-size: 2em;
       }
     }
+    .redes{
+      display: flex;
+    }
   }
   @include responsive(phone) {
     .principalDestinos {
@@ -60,6 +63,9 @@ main {
 
 .fondoImagenLugares {
   @include responsive(phone) {
+    height: 200vh;
+  }
+  @include responsive(phone) {
     .TextoContenido {
       padding-top: 70px;
     }
@@ -75,6 +81,7 @@ main {
 .fondoContacto {
   @include responsive(phone) {
     .formEstilo {
+      margin: auto;
       width: 80%;
     }
   }

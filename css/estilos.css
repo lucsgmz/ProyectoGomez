@@ -500,6 +500,11 @@
     padding: 0px;
     font-size: 2em;
   }
+  html .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -548,6 +553,12 @@
 }
 
 @media all and (max-width: 600px) {
+  .fondoImagenLugares {
+    height: 200vh;
+  }
+}
+
+@media all and (max-width: 600px) {
   .fondoImagenLugares .TextoContenido {
     padding-top: 70px;
   }
@@ -567,6 +578,7 @@
 
 @media all and (max-width: 600px) {
   .fondoContacto .formEstilo {
+    margin: auto;
     width: 80%;
   }
 }
