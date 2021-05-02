@@ -6,8 +6,9 @@ html {
     #header {
       position: relative;
       .navegacion {
-        padding: 0px;
+        padding: 0;
         font-size: 2em;
+        margin: 0;
       }
     }
     .redes{
@@ -63,7 +64,7 @@ main {
 
 .fondoImagenLugares {
   @include responsive(phone) {
-    height: 200vh;
+    height: 240vh;
   }
   @include responsive(phone) {
     .TextoContenido {
@@ -81,8 +82,9 @@ main {
 .fondoContacto {
   @include responsive(phone) {
     .formEstilo {
-      margin: auto;
       width: 80%;
     }
   }
 }
+
+
