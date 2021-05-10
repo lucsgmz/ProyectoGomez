@@ -6,9 +6,13 @@ html {
     #header {
       position: relative;
       .navegacion {
-        padding: 0;
+        padding: 0px 0px 10px;
         font-size: 2em;
         margin: 0;
+        li{
+          font-family: 'Montserrat', sans-serif;
+          
+        }
       }
     }
     .redes{
@@ -35,16 +39,25 @@ html {
 .seccion_1{
   @include responsive(phone) {
     height: 160vh;
+    .info h2{
+      font-size: 3rem;
+    }
+    .info h3{
+      font-size: 2rem;
+      .button{
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 .modificador {
   @include responsive(phone) {
     .destinos1 {
-      padding-top: 55px;
-      padding-bottom: 55px;
+      padding-top: 35px;
+      padding-bottom: 25px;
       padding-left: 0px;
     }
-    .destinos {
+    .destinos2 {
       padding-bottom: 55px;
     }
   }
@@ -56,6 +69,13 @@ html {
     }
   }
 }
+.acerca {
+  @include responsive(phone) {
+    .bossContact {
+      margin: auto;
+    }
+  }
+}
 main {
   @include responsive(phone) {
     margin-top: 0px;
@@ -64,7 +84,7 @@ main {
 
 .fondoImagenLugares {
   @include responsive(phone) {
-    height: 240vh;
+    height: auto;
   }
   @include responsive(phone) {
     .TextoContenido {
@@ -75,16 +95,43 @@ main {
       flex-direction: column;
       .destinos {
         width: 100%;
+        margin-bottom: 10px;
       }
     }
   }
 }
 .fondoContacto {
   @include responsive(phone) {
-    .formEstilo {
-      width: 80%;
+    width: 100%;
+    height: auto;
+    .padreContacto {
+      display: flex;
+      flex-direction: column;
+      .contactoPr{
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    .formEstilo{
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  }
+  @media all and (min-width: 1280px)
+  {
+    height: 120vh;
+  }
+  @media all and (min-width: 1920px)
+  {
+    height: 100vh;
+  }
+}
+.recibir{
+  @include responsive(phone) {
+    .areaR {
+      width: 90%;
     }
   }
 }
-
 

@@ -6,6 +6,160 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@media all and (max-width: 600px) {
+  html {
+    font-size: 0.8em;
+  }
+}
+
+@media all and (max-width: 600px) {
+  html #header {
+    position: relative;
+  }
+  html #header .navegacion {
+    padding: 0px 0px 10px;
+    font-size: 2em;
+    margin: 0;
+  }
+  html #header .navegacion li {
+    font-family: 'Montserrat', sans-serif;
+  }
+  html .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media all and (max-width: 600px) {
+  html .principalDestinos {
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .seccion h1 {
+    padding: 0px;
+    padding-top: 255px;
+    color: #000;
+    font-size: 3em;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .seccion_1 {
+    height: 160vh;
+  }
+  .seccion_1 .info h2 {
+    font-size: 3rem;
+  }
+  .seccion_1 .info h3 {
+    font-size: 2rem;
+  }
+  .seccion_1 .info h3 .button {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .modificador .destinos1 {
+    padding-top: 35px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+  }
+  .modificador .destinos2 {
+    padding-bottom: 55px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .acerca .bossAcerca {
+    padding-left: 5px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .acerca .bossContact {
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 600px) {
+  main {
+    margin-top: 0px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .fondoImagenLugares {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .fondoImagenLugares .TextoContenido {
+    padding-top: 70px;
+  }
+  .fondoImagenLugares .viajes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fondoImagenLugares .viajes .destinos {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .fondoContacto {
+    width: 100%;
+    height: auto;
+  }
+  .fondoContacto .padreContacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fondoContacto .padreContacto .contactoPr {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .fondoContacto .formEstilo {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .fondoContacto {
+    height: 120vh;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .fondoContacto {
+    height: 100vh;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .recibir .areaR {
+    width: 90%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +196,7 @@
 
 #header ul li {
   display: inline-block;
-  font-family: "Kiwi Maru", serif;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
 
@@ -123,7 +277,7 @@
   margin-top: 10px;
   display: inline-block;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 25px;
   border-radius: 5px;
   color: #000;
 }
@@ -131,7 +285,7 @@
 .seccion_1 {
   background-image: url(../imagenes/catalogo.jpg);
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background-position: center;
   position: center;
   background-size: cover;
@@ -178,7 +332,7 @@
   margin-top: 10px;
   display: inline-block;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 25px;
   border-radius: 5px;
   color: #000;
   color: black;
@@ -189,9 +343,57 @@
   font-family: "Quicksand", sans-serif;
 }
 
+.recibir {
+  background-image: url(../imagenes/alpinista.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recibir .areaR {
+  width: 50%;
+  margin: auto;
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  text-align: center;
+}
+
+.recibir .espacioR {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  margin: 30px 0px;
+  font-size: 20px;
+  border: 1px solid #000;
+}
+
+.copy {
+  background: rgba(74, 85, 104, 0.8);
+}
+
+.copy p {
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+}
+
 .fondoImagenLugares {
   width: 100%;
-  height: 180vh;
+  height: auto;
   background-image: url(../imagenes/fondolugares3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -236,7 +438,7 @@
 }
 
 .contenido a:hover {
-  color: #3a3a3a;
+  color: #646363;
   text-decoration: inherit;
 }
 
@@ -260,6 +462,7 @@
   padding: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 15px;
 }
 
 .viajes img {
@@ -307,8 +510,17 @@
 }
 
 .modificador .destinos1 {
-  padding-top: 55px;
+  padding-top: 25px;
   padding-left: 20px;
+  margin: auto;
+}
+
+.modificador .destinos2 {
+  margin: auto;
+}
+
+.modificador .destinos3 {
+  padding: 0px 0px 25px;
 }
 
 .acerca {
@@ -357,6 +569,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 150px;
+  margin: auto;
 }
 
 .acerca .bossContact h2 {
@@ -390,6 +603,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contactoPr {
+  width: 49%;
+  padding: 10px;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "RocknRoll One", sans-serif;
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  margin-left: 5px;
 }
 
 .formEstilo {
@@ -489,105 +714,18 @@
   margin-top: 10px;
   display: inline-block;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 25px;
   border-radius: 5px;
   color: #000;
 }
 
-@media all and (max-width: 600px) {
-  html {
-    font-size: 0.8em;
-  }
+.padreContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-@media all and (max-width: 600px) {
-  html #header {
-    position: relative;
-  }
-  html #header .navegacion {
-    padding: 0;
-    font-size: 2em;
-    margin: 0;
-  }
-  html .redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media all and (max-width: 600px) {
-  html .principalDestinos {
-    margin: auto;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .seccion h1 {
-    padding: 0px;
-    padding-top: 255px;
-    color: #000;
-    font-size: 3em;
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .seccion_1 {
-    height: 160vh;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .modificador .destinos1 {
-    padding-top: 55px;
-    padding-bottom: 55px;
-    padding-left: 0px;
-  }
-  .modificador .destinos {
-    padding-bottom: 55px;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .acerca .bossAcerca {
-    padding-left: 5px;
-  }
-}
-
-@media all and (max-width: 600px) {
-  main {
-    margin-top: 0px;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .fondoImagenLugares {
-    height: 240vh;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .fondoImagenLugares .TextoContenido {
-    padding-top: 70px;
-  }
-  .fondoImagenLugares .viajes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .fondoImagenLugares .viajes .destinos {
-    width: 100%;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .fondoContacto .formEstilo {
-    width: 80%;
-  }
+.padreContacto .contactoPr {
+  margin: auto;
 }
 /*# sourceMappingURL=estilos.css.map */
