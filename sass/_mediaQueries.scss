@@ -9,13 +9,12 @@ html {
         padding: 0px 0px 10px;
         font-size: 2em;
         margin: 0;
-        li{
-          font-family: 'Montserrat', sans-serif;
-          
+        li {
+          font-family: "Montserrat", sans-serif;
         }
       }
     }
-    .redes{
+    .redes {
       display: flex;
     }
   }
@@ -93,31 +92,35 @@ main {
     .padreContacto {
       display: flex;
       flex-direction: column;
-      .contactoPr{
+      .contactoPr {
         width: 90%;
         margin-top: 10px;
         margin-bottom: 10px;
       }
     }
-    .formEstilo{
+    .formEstilo {
       width: 90%;
       margin-bottom: 10px;
     }
   }
-  @media all and (min-width: 1280px)
-  {
+  @media all and (min-width: 1280px) {
     height: 120vh;
   }
-  @media all and (min-width: 1920px)
-  {
+  @media all and (min-width: 1920px) {
     height: 100vh;
   }
 }
-.recibir{
+.recibir {
   @include responsive(phone) {
     .areaR {
       width: 90%;
     }
   }
 }
-
+.foot {
+  @include responsive(phone){
+      .areaR{
+        width: 90%;
+      }
+  }
+}
